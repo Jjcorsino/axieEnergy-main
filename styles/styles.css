@@ -1,0 +1,118 @@
+:root {
+  --raisinBlack: #262626;
+  --eerieBlack: #1c1c1c;
+  --orchidPink: #f2c3d0;
+  --palePink: #462d17;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Slab",sans-serif;
+  line-height: 20px;
+  font-weight: 700;
+  font-size: 16px;
+  color: #fff;
+  text-shadow: 0 2px 4px rgb(0 0 0 / 50%);
+
+  background-image: url(https://cdn.axieinfinity.com/landing-page/_next/static/images/paper-76baf766d4b1a24001967d2b100fb4dd.jpg);
+  background-size: cover;
+  height: 100%;
+}
+
+/* Header */
+header {
+  background-image: url(https://cdn.axieinfinity.com/landing-page/_next/static/images/navbar-ccacca9c656f799b3a24455d53269b60@1x.webp);
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+
+.nav-bar{
+  margin: 0;
+  padding: 0;
+}
+.dropbtn {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+}
+
+.dropdown-menu {
+  position: relative;
+  display: inline-block;
+  margin-left: 16%;
+}
+.card-counter{
+  cursor: pointer;
+  position: absolute;
+  right: 16%;
+  display: inline-block;
+}
+
+.dropdown-menu-items {
+  display: none;
+  position: absolute;
+  background-color: var(--raisinBlack);
+  min-width: 200px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-menu-items a {
+  color: #fff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-menu-items a:hover {
+  background-color: #bd850f;
+  color: #fff;
+}
+
+.dropdown-menu-items a.active {
+  background-color: #462d17;
+  color: #fff;
+}
+
+.dropdown-menu:hover .dropdown-menu-items {
+  display: block;
+}
+
+header img {
+  height: 40px;
+  width: auto;
+}
+
+header img:hover {
+  animation: pulse;
+  animation-duration: 1.15s;
+}
+
+footer {
+  padding-top: 15px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  font-size: 12px;
+  text-align: center;
+
+}
+
+footer a {
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  align-items: center;
+  color: #fff;
+
+}
+.future{
+  color: greenyellow;
+}
+

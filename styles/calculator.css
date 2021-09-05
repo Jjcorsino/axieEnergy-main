@@ -1,0 +1,119 @@
+:root {
+  --raisinBlack: #262626;
+  --eerieBlack: #1c1c1c;
+  --orchidPink: #f2c3d0;
+  --palePink: #f5d5d5;
+}
+
+.calculator-container {
+  width: auto;
+  margin: auto;
+  margin-bottom: 80px;
+  display: block;
+}
+
+/* Rounds */
+.round-container {
+  margin-top: 30px;
+  width: auto;
+  display: block;
+  text-align: center;
+}
+
+.round-info {
+  font-size: 2em;
+}
+
+.round-number {
+  font-size: 2em;
+  text-align: center;
+}
+
+.round-container img {
+  height: 45px;
+  width: 45px;
+}
+
+.energy-quantity {
+  margin-top: 5px;
+  font-size: 2em;
+}
+.cartas-quantity {
+  margin-top: 5px;
+  font-size: 2em;
+}
+
+/* Gain-Loss */
+.ene-gain-loss-container {
+  margin: 0 auto;
+  margin-top: 8px;
+  width: auto;
+  display: block;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.eneCalc-item {
+  padding: 3px;
+  display: inline-block;
+}
+.eneCalc-item p {
+  text-align: center;
+}
+
+.ene-gain-loss-container button {
+  background-image: url(https://cdn.axieinfinity.com/landing-page/_next/static/images/wooden-button-1b79079878928aa21ec6a874a54f85b8.png);
+  min-width: 50px;
+  width: 92px;
+  height: 36px;
+  background-size: contain;
+  background-color: transparent;
+  color: #fff;
+  border-style: none;
+  cursor: pointer;
+}
+
+.ene-gain-loss-container button:hover {
+  background-color: #bd850f;
+  color: #fff;
+}
+
+.gain-container {
+  margin: 0 auto;
+}
+
+/*---*/
+
+.card-gain-loss-container {
+  margin: 0 auto;
+  width: auto;
+  display: block;
+  text-align: center;
+}
+
+.cardCalc-item {
+  padding: 3px;
+  display: inline-block;
+}
+.cardCalc-item p {
+  text-align: center;
+}
+
+.card-gain-loss-container button {
+  background-image: url(https://cdn.axieinfinity.com/landing-page/_next/static/images/wooden-button-1b79079878928aa21ec6a874a54f85b8.png);
+  min-width: 50px;
+  width: 102px;
+  height: 38px;
+  background-size: cover;
+  background-position: center;
+  background-color: transparent;
+  color: #fff;
+  border-style: none;
+  cursor: pointer;
+}
+
+.card-gain-loss-container button:hover {
+  background-color: #bd850f;
+  color: #fff;
+}
