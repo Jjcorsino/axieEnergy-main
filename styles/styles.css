@@ -103,13 +103,18 @@ footer {
   text-align: center;
 
 }
+footer .ti{
+  font-size: 14px;
+}
 
 footer a {
   cursor: pointer;
   font-family: "Poppins", sans-serif;
   text-decoration: none;
+  text-shadow: none;
   align-items: center;
-  color: #fff;
+  color: #000;
+  font-size: 15px;
 
 }
 .future{
