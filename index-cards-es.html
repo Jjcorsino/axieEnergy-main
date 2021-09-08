@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="Index">
-    <meta name="robots" content="Follow">
+    <meta name="robots" content="follow, index">
     <meta name="author" content="https://github.com/Jjcorsino">
     <meta name="copyright" content="https://github.com/Jjcorsino">
-    <meta name="description" content="Axie infinity Energy Calculator">
-    <meta name="keywords" content="Axie - Infinity - Energy - Tracker - Calculator">
-    <title>Energy Calculator</title>
+    <meta name="description" content="Axie Energy es la herramienta que necesitas para controlar la energia de tus enemigos en Axie Infinity. Facilita tus victorias en arenas trackeando la energia y cartas del oponente, sin perder el conteo.">
+    <meta name="keywords" content="axie, infinity, energia, contador, calculadora, cartas">
+    <title>Energy & Cards Calculator Tracker | Axie Infinity</title>
+    <link rel="canonical" href="https:axie.energy/">
     <link rel="icon" type="image/png" href="https://axieinfinity.com/favicon.png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600&display=swap">
@@ -34,7 +34,7 @@
     </script>
 </head>
 
-<body>
+<body onload="uncheckAll()">
     <div class="nav-bar">
         <header>
             <nav>
@@ -42,34 +42,33 @@
                     <button onclick="showDropdownMenu()" class="dropbtn"><img src="https://cdn.axieinfinity.com/landing-page/_next/static/images/logo-f3b5c962671a2516bc9fef42ad9e9145@1x.webp"></button>
 
                     <div id="dropdownMenuItems" class="dropdown-menu-items">
-                        <a href="#" class="active"><i class="fas fa-home"></i>&nbsp;&nbsp;Home</a>
-                        <a href="about-en.html"><i class="fas fa-question-circle"></i>&nbsp;&nbsp;How it works</a>
-                        <a href="index-cards.html"><i class="fas fa-globe-americas"></i>&nbsp;&nbsp;Switch to Spanish</a>
+                        <a href="https://axie.energy/index-cards-es.html" class="active"><i class="fas fa-home"></i>&nbsp;&nbsp;Inicio</a>
+                        <a href="https://axie.energy/about-es.html"><i class="fas fa-question-circle"></i>&nbsp;&nbsp;Cómo funciona</a>
+                        <a href="https://axie.energy/index-cards.html"><i class="fas fa-globe-americas"></i>&nbsp;&nbsp;Switch to English</a>
                     </div>
                 </div>
                 <div class="card-counter">
-                    <a href="index-en.html"><img src="img/energy.png"></a>
+                    <a href="https://axie.energy/index-es.html"><img src="img/energy.png"></a>
                 </div>
             </nav>
         </header>
     </div>
 
-    <div class="calculator-container">
+    <div class="main-container">
         <div class="calculator-container">
             <div class="round-container">
-                <span class="round-info">Round&nbsp;</span><span id="roundNumber" class="round-number">1</span><br>
+                <span class="round-info">Ronda&nbsp;</span><span id="roundNumber" class="round-number">1</span><br>
                 
 
                 <div class="energy-quantity">
                 <img src="img/energy.png">
                     <span id="energyQuantity">3</span><span>/10</span>
                 </div>
-                
+               
                 <div class="cartas-quantity">
                     <img src="https://cdn.axieinfinity.com/landing-page/_next/static/images/cards-e6167c287dffee939b51956f37dc4360@1x.webp">
                     <span id="cartasQuantity">6</span><span>/15</span>
                 </div>
-                
                 
             </div>
 
@@ -82,15 +81,16 @@
                     <button onclick="add()">+1 ENE</button>
                 </div>
                 <div class="eneCalc-item">
-                    <button onclick="nextRound()">ROUND</button>
+                    <button onclick="nextRound()">RONDA</button>
                 </div>
 
                 
-
+                
                 
             </div>
 
             <div class="card-gain-loss-container">
+                
                 <div class="cardCalc-item">
                     <button onclick="subtractc()">-1 CARD</button>
                 </div>
@@ -98,43 +98,46 @@
                 <div class="cardCalc-item">
                     <button onclick="addc()">+1 CARD</button>
                 </div>
+                
                 <div class="eneCalc-item">
-                    <button onclick="reset()">NEW MATCH</button>
+                    <button onclick="reset()">PARTIDA</button>
                 </div>
+                
             </div>
 
             
         </div>
 
 
+        
         <div class="cards-and-parts-container">
             <table>
                 <thead>
                     <tr>
-                        <th class="table-header">Part</th>
-                        <th class="table-header">First Appearance</th>
-                        <th class="table-header">Second Appearance</th>
+                        <th class="table-header">Parte</th>
+                        <th class="table-header">Primer Aparición</th>
+                        <th class="table-header">Segunda Aparición</th>
                     </tr>
                 </thead>
                 <tbody>
                     <div>
                         <tr>
-                            <td class="axie1">Mouth</td>
+                            <td class="axie1">Boca</td>
                             <td class="axie1" onclick="toggleA1M1()"><i class=" fas fa-times" id="a1m1"></i></td>
                             <td class="axie1" onclick="toggleA1M2()"><i class="fas fa-times" id="a1m2"></i></td>
                         </tr>
                         <tr>
-                            <td class="axie1">Horn</td>
+                            <td class="axie1">Cuerno</td>
                             <td class="axie1" onclick="toggleA1H1()"><i class=" fas fa-times" id="a1h1"></td>
                             <td class="axie1" onclick="toggleA1H2()"><i class=" fas fa-times" id="a1h2"></td>
                         </tr>
                         <tr>
-                            <td class="axie1">Back</td>
+                            <td class="axie1">Espalda</td>
                             <td class="axie1" onclick="toggleA1B1()"><i class=" fas fa-times" id="a1b1"></td>
                             <td class="axie1" onclick="toggleA1B2()"><i class=" fas fa-times" id="a1b2"></td>
                         </tr>
                         <tr>
-                            <td class="axie1">Tail</td>
+                            <td class="axie1">Cola</td>
                             <td class="axie1" onclick="toggleA1T1()"><i class=" fas fa-times" id="a1t1"></td>
                             <td class="axie1" onclick="toggleA1T2()"><i class=" fas fa-times" id="a1t2"></td>
                         </tr>
@@ -142,22 +145,22 @@
 
                     <div>
                         <tr>
-                            <td class="axie2">Mouth</td>
+                            <td class="axie2">Boca</td>
                             <td class="axie2" onclick="toggleA2M1()"><i class=" fas fa-times" id="a2m1"></i></td>
                             <td class="axie2" onclick="toggleA2M2()"><i class="fas fa-times" id="a2m2"></i></td>
                         </tr>
                         <tr>
-                            <td class="axie2">Horn</td>
+                            <td class="axie2">Cuerno</td>
                             <td class="axie2" onclick="toggleA2H1()"><i class=" fas fa-times" id="a2h1"></td>
                             <td class="axie2" onclick="toggleA2H2()"><i class=" fas fa-times" id="a2h2"></td>
                         </tr>
                         <tr>
-                            <td class="axie2">Back</td>
+                            <td class="axie2">Espalda</td>
                             <td class="axie2" onclick="toggleA2B1()"><i class=" fas fa-times" id="a2b1"></td>
                             <td class="axie2" onclick="toggleA2B2()"><i class=" fas fa-times" id="a2b2"></td>
                         </tr>
                         <tr>
-                            <td class="axie2">Tail</td>
+                            <td class="axie2">Cola</td>
                             <td class="axie2" onclick="toggleA2T1()"><i class=" fas fa-times" id="a2t1"></td>
                             <td class="axie2" onclick="toggleA2T2()"><i class=" fas fa-times" id="a2t2"></td>
                         </tr>
@@ -165,22 +168,22 @@
 
                     <div>
                         <tr>
-                            <td class="axie3">Mouth</td>
+                            <td class="axie3">Boca</td>
                             <td class="axie3" onclick="toggleA3M1()"><i class=" fas fa-times" id="a3m1"></i></td>
                             <td class="axie3" onclick="toggleA3M2()"><i class="fas fa-times" id="a3m2"></i></td>
                         </tr>
                         <tr>
-                            <td class="axie3">Horn</td>
+                            <td class="axie3">Cuerno</td>
                             <td class="axie3" onclick="toggleA3H1()"><i class=" fas fa-times" id="a3h1"></td>
                             <td class="axie3" onclick="toggleA3H2()"><i class=" fas fa-times" id="a3h2"></td>
                         </tr>
                         <tr>
-                            <td class="axie3">Back</td>
+                            <td class="axie3">Espalda</td>
                             <td class="axie3" onclick="toggleA3B1()"><i class=" fas fa-times" id="a3b1"></td>
                             <td class="axie3" onclick="toggleA3B2()"><i class=" fas fa-times" id="a3b2"></td>
                         </tr>
                         <tr>
-                            <td class="axie3">Tail</td>
+                            <td class="axie3">Cola</td>
                             <td class="axie3" onclick="toggleA3T1()"><i class=" fas fa-times" id="a3t1"></td>
                             <td class="axie3" onclick="toggleA3T2()"><i class=" fas fa-times" id="a3t2"></td>
                         </tr>
@@ -189,17 +192,18 @@
             </table>
 
             <div class="clear-checkboxes">
-                <button onclick="uncheckAll()">CLEAR</button>
+                <button onclick="uncheckAll()">LIMPIAR</button>
             </div>
         </div>
     </div>
 
+
     <footer>
-        <p class="ti">Please consider donating to:</p>
+        <p class="ti">Por favor, considera hacer una donación en:</p>
         <p>
             <a title="Copy to clipboard" id='ronnin' href="#" onclick="CopyToClipboard('ronnin');return false;">ronin:9822945e67003027066d580dcd471345d99d2d94 <img src="/img/copy.png"></a>
         </p>
-        <p>We're NOT affiliated with Axie Infinity. This is a fan site dedicated to the game</p>
+        <p>NO estamos asociados con Axie Infinity. Esta web está creada por fans</p>
     </footer>
     <script src="js/calculatorCard.js"></script>
     <script src="js/table.js"></script>
