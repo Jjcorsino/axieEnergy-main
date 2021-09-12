@@ -16,14 +16,14 @@ body {
   color: #fff;
   text-shadow: 0 2px 4px rgb(0 0 0 / 50%);
 
-  background-image: url(https://cdn.axieinfinity.com/landing-page/_next/static/images/paper-76baf766d4b1a24001967d2b100fb4dd.jpg);
+  background: no-repeat url("../img/background.jpg");
   background-size: cover;
   height: 100%;
 }
 
 /* Header */
 header {
-  background-image: url(https://cdn.axieinfinity.com/landing-page/_next/static/images/navbar-ccacca9c656f799b3a24455d53269b60@1x.webp);
+  background:url("../img/header.png");
   background-position: 50%;
   background-repeat: no-repeat;
 }
