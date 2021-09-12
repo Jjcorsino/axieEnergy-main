@@ -18,7 +18,7 @@ body {
 
   background: no-repeat url("../img/background.jpg");
   background-size: cover;
-  height: 100%;
+  height: auto;
 }
 
 /* Header */
@@ -73,6 +73,7 @@ header {
 .dropdown-menu-items a:hover {
   background-color: #bd850f;
   color: #fff;
+  
 }
 
 .dropdown-menu-items a.active {

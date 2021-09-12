@@ -63,7 +63,7 @@
 }
 
 .ene-gain-loss-container button {
-  background-image: url(https://cdn.axieinfinity.com/landing-page/_next/static/images/wooden-button-1b79079878928aa21ec6a874a54f85b8.png);
+  background: url("../img/button.png");
   min-width: 50px;
   width: 92px;
   height: 36px;
@@ -75,8 +75,9 @@
 }
 
 .ene-gain-loss-container button:hover {
-  background-color: #bd850f;
   color: #fff;
+  animation: pulse;
+  animation-duration: 1.15s;
 }
 
 .gain-container {
@@ -114,6 +115,7 @@
 }
 
 .card-gain-loss-container button:hover {
-  background-color: #bd850f;
   color: #fff;
+  animation: pulse;
+  animation-duration: 1.15s;
 }

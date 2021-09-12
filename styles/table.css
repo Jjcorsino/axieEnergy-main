@@ -182,7 +182,7 @@ th {
 }
 
 .clear-checkboxes button {
-  background-image: url(https://cdn.axieinfinity.com/landing-page/_next/static/images/wooden-button-1b79079878928aa21ec6a874a54f85b8.png);
+  background: url("../img/button.png");
   width: 126px;
   height: 46px;
   margin-top: 8px;
@@ -194,6 +194,7 @@ th {
 }
 
 .clear-checkboxes button:hover {
-  background-color: #bd850f;
   color: #fff;
+  animation: pulse;
+  animation-duration: 1.15s;
 }
