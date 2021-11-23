@@ -94,6 +94,13 @@ header img:hover {
   animation: pulse;
   animation-duration: 1.15s;
 }
+h3{
+  text-align: center;
+}
+h3 a{
+  text-decoration: none;
+  color: greenyellow;
+}
 
 footer {
   padding-top: 15px;
