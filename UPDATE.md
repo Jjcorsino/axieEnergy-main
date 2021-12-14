@@ -15,5 +15,5 @@
 
 Spam sociales 
 https://github.com/Jjcorsino
-newhunter7 on Twitch
-ronin:2919b5c63b605fff9707a01ae6e127645a8f1439
+Newhunterino on Twitch
+ronin:440cdeec1b276edbc15dacea01dceb0dabd2d4c6

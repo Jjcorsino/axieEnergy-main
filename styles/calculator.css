@@ -18,14 +18,18 @@
   width: auto;
   display: block;
   text-align: center;
+  -webkit-text-stroke: 2px #582d14;
+  text-shadow: 0 3px 0 #582d14;
+  font-family: 'Francois One',sans-serif;
+  font-weight: 400;
 }
 
 .round-info {
-  font-size: 2em;
+  font-size: 2.5em;
 }
 
 .round-number {
-  font-size: 2em;
+  font-size: 2.5em;
   text-align: center;
 }
 
@@ -36,7 +40,8 @@
 
 .energy-quantity {
   margin-top: 5px;
-  font-size: 2em;
+  font-size: 2.5em;
+  
 }
 .cartas-quantity {
   margin-top: 5px;
@@ -67,7 +72,8 @@
   min-width: 50px;
   width: 92px;
   height: 36px;
-  background-size: contain;
+  background-size: cover;
+  background-position: center;
   background-color: transparent;
   color: #fff;
   border-style: none;
