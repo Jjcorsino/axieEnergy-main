@@ -80,6 +80,18 @@ header {
   background-color: #462d17;
   color: #fff;
 }
+.shop{
+  display: inline-block;
+  text-align: center;
+  position: absolute;
+  margin-left: 50px;
+}
+.shop a{
+  color: #fff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
 
 .dropdown-menu:hover .dropdown-menu-items {
   display: block;
